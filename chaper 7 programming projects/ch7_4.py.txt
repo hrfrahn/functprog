@@ -1,0 +1,22 @@
+# harrison frahn
+# period 2
+# chapter 7.4
+# expected input: a number from 0-100
+def grade(number):
+    number = round(number)
+    if number <= 100 and number >= 88:
+        return 'A'
+    elif number <= 87 and number >= 77:
+        return 'B'
+    elif number <= 76 and number >= 66:
+        return 'C'
+    elif number <= 65 and number >= 55:
+        return 'D'
+    elif number <= 54 and number >= 0:
+        return 'F'
+def main():
+    score = eval(input("Enter your score out of 100: "))
+    x = grade(score)
+    print("Your grade is:",x)
+if __name__ == '__main__':
+    main()
